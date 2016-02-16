@@ -14,8 +14,8 @@ post '/mail' do
       :from => 'info@doctravel.com',
       :to => params[:email],
       :cc => 'siansor@gmail.com',
-      :subject => "DocTravel презентация ",
-      :body => "Спасибо. Ваш линк для скачивания презентации http://doctravel.com/DocTravelRU.pdf",
+      :subject => "Contact Message",
+      :body => "Contact link <a href='http://doctravel.com/DocTravelRU.pdf'> Link </a> ",
       :via => :smtp,
       :via_options => {
         :address              => 'smtp.gmail.com',
