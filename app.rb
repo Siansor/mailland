@@ -13,9 +13,11 @@ post '/mail' do
     Pony.mail({
       :from => 'info@doctravel.com',
       :to => params[:email],
-      :cc => 'siansor@gmail.com',
-      :subject => "Contact Message",
-      :body => "Contact link <a href='http://doctravel.com/DocTravelRU.pdf'> Link </a> ",
+      :bcc => 'shapalov@gmail.com',
+      :bcc => 'info@doctravel.com',
+      :bcc => 'rolenchyn@doctravel.com',
+      :subject => "Doctravel - ключ ко всей зарубежной медицине",
+      :body => "Спасибо за ваш интерес к нашему проекту! Вы можете скачать презентацию проекта по этому линку: https://s3.amazonaws.com/uploads.hipchat.com/471390/3011413/D0OIllENbV6SOcj/DocTravel%20ustartup.pdf Хорошего дня!",
       :via => :smtp,
       :via_options => {
         address: "smtp.mandrillapp.com",
