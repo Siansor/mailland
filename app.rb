@@ -12,7 +12,6 @@ get '/indexru' do
   erb :indexru
 end
 
-
 post '/thanksru' do
 
   mail = params[:email]
@@ -30,7 +29,7 @@ post '/thanksru' do
       domain: "doctravel.com",
       authentication: "plain",
       user_name: "info@doctravel.com",
-      password: "6SSKZqhx1KBoEAdvHhjSug"
+      password: ""
     }
   })
   redirect '/thanksru'
@@ -52,7 +51,7 @@ post '/thankseng' do
       domain: "doctravel.com",
       authentication: "plain",
       user_name: "info@doctravel.com",
-      password: "6SSKZqhx1KBoEAdvHhjSug"
+      password: ""
     }
   })
   redirect '/thankseng'
@@ -71,7 +70,6 @@ end
 get '/thanksru' do
   erb :thanksru
 end
-
 
 get '/DocTravelRU.pdf' do
   attachment 'DocTravelRU.pdf'
